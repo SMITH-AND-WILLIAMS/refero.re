@@ -1,0 +1,1 @@
+docker-compose exec php sed -i -e "s/^; max_input_vars.*/max_input_vars = 5000/" -e "s/^; suhosin.get.max_vars.*/suhosin.get.max_vars = 5000/" -e "s/^; uhosin.post.max_vars.*/uhosin.post.max_vars = 5000/" -e "s/^suhosin.request.max_vars.*/suhosin.request.max_vars = 5000/" /etc/php7/php.ini
