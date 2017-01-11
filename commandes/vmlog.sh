@@ -1,1 +1,1 @@
-docker-compose exec $1 sh
+docker-compose exec --privileged --user 82 $1 /bin/sh
